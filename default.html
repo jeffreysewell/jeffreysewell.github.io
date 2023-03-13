@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Webpage</title>
+	<title>My Splash Page</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container">
+	<div class="background-container">
+		<div id="background-image"></div>
+	</div>
+	<div class="content-container">
 		<div class="left-column">
-			<h1>Welcome to My Webpage</h1>
+			<h1>Welcome to My Splash Page</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar elit nec sapien commodo, at commodo magna dignissim. Nullam faucibus vel odio in posuere. Duis consequat risus vel eros dignissim, quis bibendum quam luctus. </p>
+			<button>Learn More</button>
 		</div>
 		<div class="right-column">
 			<h2>Latest News</h2>
@@ -22,38 +26,3 @@
 	<script src="script.js"></script>
 </body>
 </html>
-
-.container {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.left-column {
-	flex-basis: 60%;
-	padding: 20px;
-	background-color: #f2f2f2;
-}
-
-.right-column {
-	flex-basis: 40%;
-	padding: 20px;
-	background-color: #e6e6e6;
-}
-
-ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-}
-
-li {
-	padding: 10px;
-	border-bottom: 1px solid #ccc;
-}
-
-li:last-child {
-	border-bottom: none;
-}
-// This is where your JavaScript code would go
-// You can add event listeners, manipulate the DOM, or perform other actions here
-
