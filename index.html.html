@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Set the video container to be fixed, taking up the entire page */
+		#video-container {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			z-index: -1; /* Set the z-index to -1 so it doesn't interfere with other content */
+		}
+
+		/* Set the video player to be absolute, centered in the container */
+		#video-player {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<!-- The video container -->
+	<div id="video-container">
+		<!-- The picture element serves up a different image depending on the device size -->
+		<picture>
+			<source media="(max-width: 600px)" srcset="mobile-background.jpg">
+			<img src="default-background.jpg" alt="Default background image">
+		</picture>
+
+		<!-- The video player fallback for devices that support the YouTube IFrame API -->
+		<div id="video-player"></div>
+	</div>
+
+	<!-- Other content goes here -->
+	<h1>Welcome, Let's Build A Dynamic Splash!</h1>
+	<p>Experience the Best of Django Stack: Robust, Secure, and Efficient.</p>
+
+	<script>
+		// Check if the YouTube IFrame API is supported, and if not, use a fallback image
+		if (typeof YT === 'undefined' || typeof YT.Player === 'undefined') {
+			document.getElementById('video-player').innerHTML = '<img src="default-background.jpg" alt="Default background image">';
+		} else {
+			// This function creates a YouTube player in the video-container div
+			let player;
+			function onYouTubeIframeAPIReady() {
+				player = new YT.Player('video-player', {
+					height: '100%',
+					width: '100%',
+					videoId: 'UgkxEUndztlqzll4qMZlhC6gUc75UvC7yMZC', // Replace with the ID of your YouTube video
+					playerVars: {
+						autoplay: 1,
+						loop: 1,
+						controls: 0,
+						showinfo: 0,
+						mute: 1,
+						rel: 0,
+						iv_load_policy: 3,
+						modestbranding: 1
+					},
+					events: {
+						'onReady': onPlayerReady,
+						'onStateChange': onPlayerStateChange
+					}
+				});
+			}
+
+			// This function sets the player to loop and autoplay
+			function onPlayerReady(event) {
+				event.target.setVolume(0);
+				event.target.playVideo();
+				event.target.setLoop(true);
+			}
+
+			// This function restarts the video when it ends
+			function onPlayerStateChange(event) {
+				if (event.data === YT.PlayerState.ENDED) {
+					event.target.seekTo(0);
+				}
+			}
+		}
+	</script>
+
+	<!-- Load the YouTube IFrame API script after the JavaScript code -->
+	<script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
