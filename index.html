@@ -1,8 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rotating Words</title>
 	<style>
+		#rotating-word {
+			font-size: 36px;
+			font-weight: bold;
+			animation-name: rotate-words;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+		}
+
+		@keyframes rotate-words {
+			0% {
+				opacity: 1;
+			}
+			25% {
+				opacity: 0;
+			}
+			50% {
+				opacity: 0;
+			}
+			75% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+
 		/* Set the video container to be fixed, taking up the entire page */
 		#video-container {
 			position: fixed;
@@ -60,9 +88,12 @@
 			font-size: 12px;
 			margin-top: 50px;
 		}
+
 	</style>
 </head>
 <body>
+	<div id="rotating-word"></div>
+	<script type="module" src="app.js"></script>
 	<!-- The video container -->
 	<div id="video-container">
 		<!-- The picture element serves up a different image depending on the device size -->
@@ -74,18 +105,7 @@
 		<!-- The video player fallback for devices that support the YouTube IFrame API -->
 		<div id="video-player"></div>
 	</div>
-
-	<!-- Add container div for two-column layout -->
-	<div class="container">
-		<div class="left-column">
-			<h1>Welcome, Let's Build A Dynamic Splash!</h1>
-			<p>Experience the Best of Django Stack: Robust, Secure, and Efficient.</p>
-		</div>
-		<div class="right-column">
-			<h1></h1>
-			<p></p>
-		</div>
-
+	
 	<script>
 		// Check if the YouTube IFrame API is supported, and if not, use a fallback image
 		if (typeof YT === 'undefined' || typeof YT.Player === 'undefined') {
