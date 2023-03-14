@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Rotating Words</title>
 	<style>
 		#rotating-word {
@@ -105,7 +105,7 @@
 		<!-- The video player fallback for devices that support the YouTube IFrame API -->
 		<div id="video-player"></div>
 	</div>
-	
+
 	<script>
 		// Check if the YouTube IFrame API is supported, and if not, use a fallback image
 		if (typeof YT === 'undefined' || typeof YT.Player === 'undefined') {
@@ -149,6 +149,7 @@
 				}
 			}
 		}
+
 	</script>
 
 	<!-- Load the YouTube IFrame API script after the JavaScript code -->
