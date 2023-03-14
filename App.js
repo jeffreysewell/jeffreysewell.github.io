@@ -1,7 +1,11 @@
-import { rotateWords } from './rotate-words.js';
+import { WordRotator } from './wordRotator.js';
 
-// Call the rotateWords function initially to display a random word
-rotateWords();
+const rotatingWordElement = document.getElementById('rotating-word');
+const words = ['Welcome!','Willkommen!','مرحباً!','欢迎!','Fáilte!','Benvenuto!','いらっしゃいませ!',
+'환영!','Powitanie!','Bem-vindo!','Bine ati venit!','Добро пожаловать!','Fàilte!',
+'Bienvenido!','Hoş geldin!','خۇش كەپسىز!','Chào mừng!']; 
+// Replace with your desired words
+const duration = 2000; 
 
-// Use setInterval to call the rotateWords function every 3 seconds
-setInterval(rotateWords, 3000);
+// Change the word every 2 seconds
+new WordRotator(rotatingWordElement, words, duration);
