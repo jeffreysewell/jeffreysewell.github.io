@@ -25,6 +25,41 @@
 			width: auto;
 			height: auto;
 		}
+
+		/* Add CSS for two-column layout */
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: stretch;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.left-column {
+			width: 50%;
+			padding: 0 10px;
+		}
+
+		.right-column {
+			width: 50%;
+			padding: 0 10px;
+		}
+
+		/* Add CSS for white font */
+		body {
+			color: white;
+		}
+
+		/* Add CSS for footer */
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			font-size: 12px;
+			margin-top: 50px;
+		}
 	</style>
 </head>
 <body>
@@ -40,9 +75,16 @@
 		<div id="video-player"></div>
 	</div>
 
-	<!-- Other content goes here -->
-	<h1>Welcome, Let's Build A Dynamic Splash!</h1>
-	<p>Experience the Best of Django Stack: Robust, Secure, and Efficient.</p>
+	<!-- Add container div for two-column layout -->
+	<div class="container">
+		<div class="left-column">
+			<h1>Welcome, Let's Build A Dynamic Splash!</h1>
+			<p>Experience the Best of Django Stack: Robust, Secure, and Efficient.</p>
+		</div>
+		<div class="right-column">
+			<h1></h1>
+			<p></p>
+		</div>
 
 	<script>
 		// Check if the YouTube IFrame API is supported, and if not, use a fallback image
