@@ -1,4 +1,4 @@
-import { wordList } from './word-list.js';
+import { wordList } from './app.js';
 
 // Get a reference to the rotating word element
 const rotatingWord = document.getElementById('rotating-word');
