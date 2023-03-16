@@ -14,7 +14,7 @@
         <!-- The picture element serves up a different image depending on the device size -->
         <picture>
             <source media="(max-width: 600px)" srcset="mobile-background.jpg">
-            <img src="default-background.jpg" alt="Default background image">
+            <img src="mobile-background.jpg" alt="Default background image">
         </picture>
 
         <!-- The video player fallback for devices that support the YouTube IFrame API -->
@@ -38,7 +38,7 @@
     <script>
         // Check if the YouTube IFrame API is supported, and if not, use a fallback image
         if (typeof YT === 'undefined' || typeof YT.Player === 'undefined') {
-            document.getElementById('video-player').innerHTML = '<img src="default-background.jpg" alt="Default background image">';
+            document.getElementById('video-player').innerHTML = '<img src="mobile-background.jpg" alt="Default background image">';
         } else {
             // This function creates a YouTube player in the video-container div
             let player;
