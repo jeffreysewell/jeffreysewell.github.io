@@ -1,11 +1,9 @@
-import { WordRotator } from './wordRotator.js';
+import { WordRotator } from './WordRotator.js';
 
 const rotatingWordElement = document.getElementById('rotating-word');
-const words = ['Welcome!','Willkommen!','مرحباً!','欢迎!','Fáilte!','Benvenuto!','いらっしゃいませ!',
-'환영!','Powitanie!','Bem-vindo!','Bine ati venit!','Добро пожаловать!','Fàilte!',
-'Bienvenido!','Hoş geldin!','خۇش كەپسىز!','Chào mừng!']; 
+const words = ['Welcome', 'Willkommen', '欢迎', 'Benvenuto', 'いらっしゃいませ', 'Bem-vindo', 'Добро пожаловать', 'Bienvenido'];
 // Replace with your desired words
-const duration = 2000; 
+const duration = 2000;
+// Replace with your desired duration in milliseconds
 
-// Change the word every 2 seconds
 new WordRotator(rotatingWordElement, words, duration);
