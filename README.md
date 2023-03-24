@@ -1,2 +1,1 @@
-# jeffreysewell.github.io
-# Django Stack Template Projects
+# coming soon.
