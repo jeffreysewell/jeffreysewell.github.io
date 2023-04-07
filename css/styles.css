@@ -27,19 +27,28 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Links */
 a {
-    color: #2D9CDB;
+    color: #1b771d;
     text-decoration: none;
 }
 
+.overlay {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 a:hover {
-    color: ##FFFFFF;
+    color: #FFFFFF;
 }
 
 /* Chatbox */
 .chatbox {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #1b771d;
     border: 1px solid #E0E0E0;
     border-radius: 5px;
     padding: 20px;
@@ -61,7 +70,7 @@ a:hover {
 }
 
 .message.user {
-    background-color: #2D9CDB;
+    background-color: #1b771d;
     color: #fff;
     align-self: flex-end;
 }
@@ -70,4 +79,37 @@ a:hover {
     background-color: #E0E0E0;
     color: #333;
     align-self: flex-start;
+}
+
+/* Grid container */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    inline-size: 100%;
+    max-inline-size: 900px;
+    margin: 0 auto;
+}
+
+/* Grid item */
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: calc(33.333% - 20px);
+    block-size: 200px;
+    background-color: #1b771d;
+    color: white;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
 }
