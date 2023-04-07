@@ -1,110 +1,27 @@
-/* Reset some default styles */
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.9;
-    color: #FFFFFF;
-    background-color: transparent;
+    background-image: url("assets/img/estate_barnardsville_nc.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-/* Container */
 .container {
-    max-inline-size: auto;
-    margin: 0 auto;
-    padding: 0 15px;
+    padding-block-start: 50px;
+    padding-block-end: 50px;
 }
 
-/* Heading */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 500;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-}
-
-/* Links */
-a {
-    color: rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-}
-
-a:hover {
-    color: #FFFFFF;
-}
-
-/* Chatbox */
-.chatbox {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: 1px solid #FFFFFF;
-    border-radius: 5px;
-    padding: 20px;
-    margin-block-end: 20px;
-}
-
-.chatbox-title {
-    font-size: 1.25rem;
-    margin-block-end: 15px;
-}
-
-.message {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 15px;
-    background-color: transparent;
-    border-radius: 5px;
-    margin-block-end: 10px;
-}
-
-.message.user {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #fff;
-    align-self: flex-end;
-}
-
-.message.bot {
-    background-color: #FFFFFF;
-    color: #333;
-    align-self: flex-start;
-}
-
-/* Grid container */
+/* Add styles for grid-container and grid-item */
 .grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    inline-size: 100%;
-    max-inline-size: 900px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
-/* Grid item */
 .grid-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-basis: calc(33.333% - 20px);
-    block-size: 200px;
-    background-color: transparent
-    margin: 10px;
-    position: relative;
-    overflow: hidden;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-}
-
-/* Media query for screens smaller than 768px */
-@media (max-inline-size: 767px) {
-    .grid-item {
-        flex-basis: calc(50% - 20px);
-    }
-}
-
-/* Media query for screens smaller than 480px */
-@media (max-inline-size: 479px) {
-    .grid-item {
-        flex-basis: calc(100% - 20px);
-    }
+    background-color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
 }
