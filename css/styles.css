@@ -18,7 +18,7 @@ body {
 }
 
 .grid-item {
-    background-color: #f1f1f1;
+    background-color: transparent;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
