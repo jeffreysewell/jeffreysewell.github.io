@@ -22,6 +22,7 @@ body {
 /* Heading */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* Links */
@@ -63,7 +64,6 @@ a:hover {
     background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
     align-self: flex-end;
-    flex-direction: column;
 }
 
 .message.bot {
@@ -93,16 +93,7 @@ a:hover {
     margin: 10px;
     position: relative;
     overflow: hidden;
-}
-
-/* Overlay */
-.overlay {
-    position: absolute;
-    inset-block-start: 0;
-    inset-inline-start: 0;
-    inline-size: 100%;
-    block-size: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* Media query for screens smaller than 768px */
