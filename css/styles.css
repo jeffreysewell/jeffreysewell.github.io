@@ -40,7 +40,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     background-color: #rgba(0, 0, 0, 0.2);
-    border: 1px solid #FFFFFF;
+    border: 1px solid: #FFFFFF;
     border-radius: 5px;
     padding: 20px;
     margin-block-end: 20px;
