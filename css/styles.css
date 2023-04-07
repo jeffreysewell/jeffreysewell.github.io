@@ -9,7 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: hwb(0 97% 2%);
+    color: rgb(250, 247, 247);
     background-color: transparent;
 }
 
