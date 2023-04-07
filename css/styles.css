@@ -9,7 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: rgb(250, 247, 247);
+    color: #FFFFFF;
     background-color: transparent;
 }
 
@@ -32,7 +32,7 @@ a {
 }
 
 a:hover {
-    color: #176799;
+    color: ##FFFFFF;
 }
 
 /* Chatbox */
