@@ -31,15 +31,6 @@ a {
     text-decoration: none;
 }
 
-.overlay {
-    position: absolute;
-    inset-block-start: 0;
-    inset-inline-start: 0;
-    inline-size: 100%;
-    block-size: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
 a:hover {
     color: #FFFFFF;
 }
@@ -97,7 +88,7 @@ a:hover {
     justify-content: center;
     flex-basis: calc(33.333% - 20px);
     block-size: 200px;
-    background-color: #rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
     margin: 10px;
     position: relative;
@@ -112,4 +103,18 @@ a:hover {
     inline-size: 100%;
     block-size: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+    .grid-item {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 479px) {
+    .grid-item {
+        flex-basis: calc(100% - 20px);
+    }
 }
