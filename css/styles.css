@@ -89,7 +89,6 @@ a:hover {
     flex-basis: calc(33.333% - 20px);
     block-size: 200px;
     background-color: transparent
-    color: white;
     margin: 10px;
     position: relative;
     overflow: hidden;
