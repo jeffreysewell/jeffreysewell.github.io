@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Links */
 a {
-    color: #1b771d;
+    color: rgba(0, 0, 0, 0.2);
     text-decoration: none;
 }
 
@@ -48,8 +48,8 @@ a:hover {
 .chatbox {
     display: flex;
     flex-direction: column;
-    background-color: #1b771d;
-    border: 1px solid #E0E0E0;
+    background-color: #rgba(0, 0, 0, 0.2);
+    border: 1px solid #FFFFFF;
     border-radius: 5px;
     padding: 20px;
     margin-block-end: 20px;
@@ -70,13 +70,13 @@ a:hover {
 }
 
 .message.user {
-    background-color: #1b771d;
+    background-color: #rgba(0, 0, 0, 0.2);
     color: #fff;
     align-self: flex-end;
 }
 
 .message.bot {
-    background-color: #E0E0E0;
+    background-color: #FFFFFF;
     color: #333;
     align-self: flex-start;
 }
@@ -97,7 +97,7 @@ a:hover {
     justify-content: center;
     flex-basis: calc(33.333% - 20px);
     block-size: 200px;
-    background-color: #1b771d;
+    background-color: #rgba(0, 0, 0, 0.2);
     color: white;
     margin: 10px;
     position: relative;
