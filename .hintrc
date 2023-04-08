@@ -12,6 +12,7 @@
           "-webkit-text-size-adjust"
         ]
       }
-    ]
+    ],
+    "detect-css-reflows/paint": "off"
   }
 }
