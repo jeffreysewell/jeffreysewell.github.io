@@ -1,5 +1,5 @@
 body {
-    background-image: url("assets\img\estate_barnardsville_nc.jpeg");
+    background-image: url("assets/img/estate_barnardsville_nc.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,9 +41,9 @@ body {
 
 .text-background {
     position: relative;
-  }
+}
   
-  .text-background::before {
+.text-background::before {
     content: "";
     position: absolute;
     inset-block-start: 0;
@@ -52,5 +52,4 @@ body {
     inset-block-end: 0;
     background-color: rgba(255, 255, 255, 0.5); /* Adjust the color and opacity as needed */
     z-index: -1;
-  }
-  
+}
