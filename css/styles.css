@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://github.com/jeffreysewell/jeffreysewell.github.io/blob/1f7ab469a5513915c4ee9d9930a1dd6f052b7e16/assets/img/estate_barnardsville_nc.jpeg");
+    background-image: url("https://raw.githubusercontent.com/jeffreysewell/jeffreysewell.github.io/1f7ab469a5513915c4ee9d9930a1dd6f052b7e16/assets/img/estate_barnardsville_nc.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -7,15 +7,14 @@ body {
 }
 
 .container {
-    padding-block-start: 50px;
-    padding-block-end: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    column-gap: 20px;
 }
 
 .grid-item {
@@ -24,4 +23,18 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 0;
+}
+
+.grid-item p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 }

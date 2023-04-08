@@ -3,6 +3,15 @@
     "development"
   ],
   "hints": {
-    "detect-css-reflows/composite": "off"
+    "detect-css-reflows/composite": "off",
+    "detect-css-reflows/layout": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "-webkit-text-size-adjust"
+        ]
+      }
+    ]
   }
 }
