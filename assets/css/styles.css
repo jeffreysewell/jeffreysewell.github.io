@@ -21,7 +21,6 @@ body {
 .grid-item {
   background-color: transparent;
   padding: 20px;
-  border: 1px solid #ccc;
   border-radius: 4px;
   text-align: center;
   display: flex;
@@ -31,7 +30,7 @@ body {
 }
 
 .grid-item p {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 2px #f9f7f7;
 }
 
 @media (max-inline-size: 767px) {
