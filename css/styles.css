@@ -18,9 +18,9 @@ body {
 }
 
 .grid-item {
-    background-color: rgba(173, 216, 230, 0.5); /* Light blueish-green transparent background */
+    background-color: rgba(22, 114, 145, 0.9); /* Light blueish-green transparent background */
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
     border-radius: 4px;
     text-align: center;
     display: flex;
@@ -31,8 +31,13 @@ body {
 
 .grid-item p {
     color: #ffffff; /* Brightest white text color */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
+
+.grid-item.empty {
+    background-color: transparent;
+    border: none;
+  }  
 
 @media (max-inline-size: 767px) {
     .grid-container {
