@@ -18,14 +18,14 @@ body {
 }
 
 .grid-item {
-    background-color: rgba(238, 240, 249, 0.7); /* transparent background */
+    background-color: transparent; /* transparent background */
     padding: 20px;
-    border: 0px solid #ccc;
-    border-radius: 4px;
-    text-align: center;
+    border: none;
+    border-radius: none;
+    text-align: left;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     min-block-size: 0;
 }
 
