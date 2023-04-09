@@ -41,7 +41,7 @@ fetch(backgroundImage.slice(5, -2))
     const typedTextElement = document.getElementById("typed-text");
 
     // Set the text you want to appear in the h1 element
-    const textToType = "Willkommen im Asheville Haus";
+    const textToType = "Welcome! Bienvenu! Willkommen!";
 
     // Set the typing speed (interval in milliseconds between each character)
     const typingSpeed = 100;
