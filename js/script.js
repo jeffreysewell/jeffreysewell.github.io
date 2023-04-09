@@ -23,17 +23,17 @@ fetch(backgroundImage.slice(5, -2))
 
     img.onload = () => {
       // ... (the rest of the img.onload function)
+
+      // Get the h1 element
+      const typedTextElement = document.getElementById("typed-text");
+
+      // Set the text you want to appear in the h1 element
+      const textToType = "Willkommen im Asheville Haus";
+
+      // Set the typing speed (interval in milliseconds between each character)
+      const typingSpeed = 100;
+
+      // Type the text
+      typeText(typedTextElement, textToType, typingSpeed);
     };
   });
-
-// Get the h1 element
-const typedTextElement = document.getElementById("typed-text");
-
-// Set the text you want to appear in the h1 element
-const textToType = "Willkommen im Asheville Haus";
-
-// Set the typing speed (interval in milliseconds between each character)
-const typingSpeed = 100;
-
-// Type the text
-typeText(typedTextElement, textToType, typingSpeed);
