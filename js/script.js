@@ -1,3 +1,9 @@
+document.querySelectorAll(".grid-item").forEach((item) => {
+  if (item.textContent.trim() === "") {
+    item.classList.add("empty");
+  }
+});
+
 function typeText(element, text, interval, onComplete) {
   let index = 0;
 
