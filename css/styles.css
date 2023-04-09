@@ -1,5 +1,6 @@
 body {
-    background-image: url("assets/img/estate_barnardsville_nc.jpeg");
+    background-image: url("../assets/img/estate_barnardsville_nc.jpeg");
+    );
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +21,7 @@ body {
 .grid-item {
     background-color: transparent;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
     border-radius: 4px;
     text-align: center;
     display: flex;
