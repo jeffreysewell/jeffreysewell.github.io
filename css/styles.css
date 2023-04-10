@@ -1,5 +1,5 @@
 h1 {
-    color: #005096; /* Replace with your desired color */
+    color: #232527; /* Replace with your desired color */
   }
   
 body {
@@ -22,7 +22,7 @@ body {
 }
 
 .grid-item {
-    background-color: rgba(0, 80, 150, 0.3); 
+    background-color: rgba(0, 80, 150, 0.2); 
     padding: 20px;
     border: none;
     border-radius: none;
