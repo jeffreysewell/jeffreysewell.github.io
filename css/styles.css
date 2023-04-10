@@ -22,7 +22,7 @@ body {
 }
 
 .grid-item {
-    background-color: rgba(0, 80, 150, 0.4); 
+    background-color: rgba(0, 80, 150, 0.3); 
     padding: 20px;
     border: none;
     border-radius: none;
