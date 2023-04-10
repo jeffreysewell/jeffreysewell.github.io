@@ -22,7 +22,7 @@ body {
     padding: 20px;
     border: none;
     border-radius: none;
-    text-align: left;
+    text-align: start;
     display: flex;
     justify-content: left;
     align-items: left;
