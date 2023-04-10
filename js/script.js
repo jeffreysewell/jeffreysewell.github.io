@@ -24,7 +24,7 @@ function typeText(element, text, interval, onComplete) {
     const typedTextElement = document.getElementById("typed-text");
 
     // Set the text you want to appear in the h1 element
-    const textToType = "Welcome! Bienvenu! Willkommen!";
+    const textToType = "Willkommen auf meiner GitHub-Seite ~ Jeffrey Sewell";
 
     // Set the typing speed (interval in milliseconds between each character)
     const typingSpeed = 100;
